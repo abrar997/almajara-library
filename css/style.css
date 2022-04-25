@@ -1,0 +1,396 @@
+body {
+  direction: rtl;
+}
+/* navbar */
+.navbar {
+  font-weight: 600;
+  box-shadow: 1px 1px 17px #eee;
+}
+
+/* link */
+a {
+  color: black !important;
+}
+a:hover {
+  color: black;
+}
+.navbar-brand {
+  color: #fed700 !important;
+}
+
+/* form navbar */
+
+.navbar form input[type="text"]:focus {
+  border: none;
+  border: 1px solid rgb(230, 229, 229);
+  outline: none;
+}
+.navbar form input[type="text"] {
+  border-radius: 30px;
+  border: 1px solid rgb(230, 229, 229);
+  width: 400px;
+  /* position: relative; */
+  padding: 5px;
+}
+.navbar form button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 390px;
+}
+
+.navbar form button i {
+  color: #fed700;
+}
+
+.btn-dropdown-form {
+  background-color: transparent;
+  color: black !important;
+  font-weight: 600;
+}
+.btn-dropdown-form {
+  color: rgb(65, 58, 160);
+}
+
+.navbar .icons ul {
+  list-style: none;
+}
+
+.navbar .icons ul li {
+  margin-right: 15px;
+}
+.navbar .icons ul li i {
+  color: black;
+}
+.navbar .icons ul li .badge {
+  font-size: 12px;
+  background-color: #fed700 !important;
+  color: white;
+}
+.navbar .icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* hover menu */
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 460px;
+  z-index: 4;
+  left: -20px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+  font-weight: 600;
+  color: black;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fa-angle-down {
+  font-size: 8px;
+  color: gray;
+}
+
+/* header */
+.header-image {
+  filter: brightness(0.2);
+  max-height: 70%;
+  height: 550px;
+}
+header {
+  text-align: center !important;
+}
+.text-header h1 {
+  color: #eee !important;
+}
+.text-header {
+  right: 360px;
+}
+/* contact info */
+article .contact-info {
+  top: 195px;
+  left: 0;
+  position: fixed;
+  /* z-index: 100; */
+}
+article .contact-info li i {
+  color: #3f3601;
+}
+article .contact-info li i {
+  background-color: #fed700;
+  padding: 6px;
+  margin-top: 5px;
+  width: 40px;
+  text-align: center;
+}
+article .contact-info li:hover i {
+  transition: all 0.3s ease;
+  transform: translateX(10px);
+  color: rgb(31, 2, 2);
+}
+
+/* cards */
+.important-books .card {
+  border: none;
+  box-shadow: 1px 1px 17px #ccc;
+}
+.important-books .card:hover {
+  border: none;
+  box-shadow: 1px 1px 17px gray;
+  transition: all 0.6s ease;
+}
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+  /* width: 100%; */
+  height: 200px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.swiper-rtl .swiper-button-next,
+.swiper-button-prev {
+  /* position: absolute !important; */
+  top: 900px !important;
+  background-color: #fed700;
+  color: black !important;
+  padding: 20px;
+  border-radius: 50%;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 15px !important;
+  font-weight: bold;
+}
+.swiper-rtl .swiper-button-next {
+  /* position: absolute !important; */
+  top: 900px !important;
+  width: 20px !important;
+  background-color: #fed700;
+  color: black !important;
+  padding: 20px;
+  border-radius: 50%;
+  height: 12px !important;
+}
+.swiper-button-prev:after {
+  font-size: 15px !important;
+  font-weight: bold;
+}
+.swiper-button-next::after {
+  /* position: absolute !important; */
+  top: 585px !important;
+  background-color: #fed700;
+  color: black !important;
+  padding: 10px;
+  border-radius: 50%;
+  height: 42px !important;
+  font-size: 15px !important;
+  font-weight: bold;
+  width: 40px;
+  line-height: 1.5 !important;
+}
+
+.bokks-header::before {
+  content: "";
+  top: 80px;
+  background-color: #fed700 !important;
+  position: absolute;
+  /* left: 0; */
+  /* bottom: 1px; */
+  width: 220px;
+  text-align: center;
+
+  height: 8px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  margin: 40px 0;
+}
+
+.swiper .card {
+  position: relative;
+  /* width: 200px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.swiper .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.swiper .card:hover .content {
+  transform: translateY(-10px);
+}
+
+.swiper .card .content .imgBx {
+  position: relative;
+  width: 130px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.swiper .card .content .imgBx img {
+  position: absolute;
+}
+
+.swiper .card:hover .sci {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+.swiper .card .sci {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+.swiper .card .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(30px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.swiper .card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.swiper .card .sci li a {
+  color: #fff;
+  /* font-size: 20px; */
+}
+.mySwiper .btn {
+  border: 1px solid #fed700;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.mySwiper .btn:hover {
+  background-color: #fed700;
+  box-shadow: 2px 2px 3px #3f3601;
+  transition: 0.7s;
+}
+
+/* discounts books */
+.card-discount .col-lg-9 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.card-discount .card {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.card-discount .card:hover {
+  box-shadow: 1px 1px 16px rgb(190, 186, 186);
+  transition: all 0.6s;
+}
+.card-discount .card img {
+  width: 200px;
+  height: 200px;
+  max-height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.card-discount .card .btn {
+  background-color: #fed700;
+}
+
+.card-discount .card i {
+  cursor: pointer;
+}
+
+
+/* footer */
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #fed700;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+footer{
+ background:rgba(0, 0, 0, 0.836);
+ margin-top: 40px;
+}
